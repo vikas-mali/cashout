@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    max-height: 100vh;
+}
+
+.arrow {
+    margin-top: 30px;
+}
+
+.grid-body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
+    align-items: start;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 3rem;
+}
+
+.card-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+
+.cash-description {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0d0d0d;
+    margin-top: 40px;
+}
+
+.amount-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.cash-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3d3d3d;
+    margin-top: 40px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon>i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    pointer-events: none;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    font-style: normal;
+    background-color: darkgrey;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.input-icon>input {
+    padding-left: 55px;
+    padding-right: 0;
+    border-radius: 10px;
+    height: 45px;
+}
+
+#btn-submit {
+    padding: 15px 70px 15px 70px;
+    background-color: rgb(35, 32, 211);
+    color: #fff;
+    border: 1px solid rgb(35, 32, 211);
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 60em) {
+    .grid-body {
+        padding: 3rem;
+    }
+    .grid {
+        grid-gap: 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card-content {
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid-body {
+        padding: 0px;
+    }
+    .item-card-title {
+        font-size: 14px;
+    }
+    .card-img {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .card-content {
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid-body {
+        padding: 0px;
+    }
+    .item-card-title {
+        font-size: 14px;
+    }
+    .card-img {
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-content {
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid-body {
+        padding: 0px;
+    }
+    .item-card-title {
+        font-size: 16px;
+    }
+    .card-img {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    .card-content {
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid-body {
+        padding: 0px;
+    }
+    .item-card-title {
+        font-size: 14px;
+    }
+    .card-img {
+        height: 150px;
+    }
+}
